@@ -1,78 +1,50 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>  
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/all.css">  
-    <link rel="shortcut icon" href="src/logo.png" type="image/x-icon">
-    <title>Monitoramento de Praias</title>
-   
+    <link rel="stylesheet" type="text/css" href="formu.css"/>
+    <title>LOGIN</title>
 </head>
-<body>
-    <header>
-        <a class="fish-logo" href="index.html"><i class="fa-solid fa-fish"></i><h1>Team 10</h1></a>
-        <a href="index2.html"><img id="aqua-logo" class="aqua-logo" src="./src/AQUA+ (1).svg" alt=""></a>
-    </header>
+<body class="formuu">
 
-    <main>
-        <section class="home">
-            <div class="dashboards">
-                <div class="dashboard" id="dashboard-1">
-                    <h1>Sensor de turbidez</h1>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="progress-bar-1"></div>
-                        <span id="progress-text-1">0%</span>
-                    </div>
-                    <button id="alert-button-1" class="hidden">Alerta</button>
-                </div>
+<form class="formu">
+  
+    <h1>Login</h1>
 
-                <div class="dashboard" id="dashboard-2">
-                    <h1>Sensor de Ph</h1>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="progress-bar-2"></div>
-                        <span id="progress-text-2">0%</span>
-                    </div>
-                    <button id="alert-button-2" class="hidden">Alerta</button>
-                </div>
+    <div class="nomee2">
+        <h3>Como você se chama?</h3>
+        <input type="text" id="nome" placeholder="Digite seu nome:">
+    </div>
+    <br>
+    <div class="nomee2">
+        <h3>Senha de entrada:</h3>
+        <input type="password" id="password" placeholder="Digite a senha">
+    </div>
 
-                <div class="dashboard" id="dashboard-3">
-                    <h1>Limpeza</h1>
-                    <div class="progress-container">
-                        <div class="progress-bar" id="progress-bar-3"></div>
-                        <span id="progress-text-3">0%</span>
-                    </div>
-                    <button id="alert-button-3" class="hidden">Limpeza Completa</button>
-                </div>
-            </div>
+    <div class="container">
+        <div class="center">
+          <button type="button" class="botao" onclick="checkPassword()">
+            <span>ENTRAR</span>
+          </button>
 
-            <div id="message-container">
-                <h2>Ultimas Limpezas feitas</h2>
-                <ul id="message-list"></ul>
-                <div class="message-conteiner-2"> 
-                    <h1>Informações</h1>
-                    <p><strong>Intervalo Medio entre as Limpezas:</strong> 1min</p>
-                    <div id="pause-control">
-                        <p><strong>Conectado:</strong></p>
-                        <label><input type="radio" name="pause" value="continue" checked>Conectado</label>
-                        <label><input type="radio" name="pause" value="pause">Desconectado</label>
-                    </div>
-                    <p><strong>Certificado:</strong>Valido</p>
-                    <div id="report" class="report-container">
-                    </div>                
-                    <button class="btn-pdf">Baixar PDF</button>
-                </div>
-            </div>
-        </section>
-    </main>
+          <p id="message"></p>
 
-    <footer>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-    </footer>
+    <h5> <a href="https://www.instagram.com/victor_sarm/">Não tenho senha de autorização</a> </h5>
+
+</form>
+<script>
+  function checkPassword() {
+    var password = document.getElementById("password").value;
+    var nome = document.getElementById("nome").value;
+    var message = document.getElementById("message");
+
+    if (password === "teste" && nome === "teste") {
+        window.location.href = "index2.html"; 
+    } else {
+        message.innerText = "Senha incorreta. Tente novamente.";
+    }
+}
+</script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="js/sensor.js"></script>
 </html>

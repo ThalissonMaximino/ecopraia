@@ -1,0 +1,163 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+
+
+.aqua-logo {
+    max-height: 50px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+.home {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.dashboards {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.dashboard {
+    flex: 1 1 calc(33% - 20px);
+    max-width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #126ef8;
+    box-shadow: 0 0 5px #000000b9;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.dashboard button {
+    padding: 5px 10px;
+    border: 0;
+    box-shadow: 0 0 5px #00000081;
+    border-radius: 5px;
+}
+
+.progress-container {
+    position: relative;
+    height: 20px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    position: absolute;
+    height: 100%;
+    background-color: #126ef863;
+    width: 0%;
+    transition: width 0.1s;
+}
+
+#message-container {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+}
+
+.message-conteiner-2 {
+    background-color: #fff;
+    box-shadow: 0 0 5px #000000b0;
+    border-radius: 10px;
+    padding: 10px;
+}
+.fish-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.322);
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+footer i {
+    font-size: 20px;
+    color: #126ef8;
+    transition: color 0.3s ease;
+}
+
+footer i:hover {
+    color: #0a4dab;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .dashboard {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .fa-fish h1 {
+        font-size: 18px;
+    }
+
+    .aqua-logo {
+        width: 100px;
+    }
+
+    .dashboard {
+        flex: 1 1 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .dashboard {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    footer {
+        gap: 10px;
+    }
+
+    footer i {
+        font-size: 18px;
+    }
+}

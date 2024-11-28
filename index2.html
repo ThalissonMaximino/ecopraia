@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="css/index2.css">  
+    <title>AQUA+ Dashboard</title>
+    <style>
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="team10-logo">
+       
+      <a class="fish-logo team10-logo" href="index.html"><i class="fa-solid fa-fish"></i><h1>Team 10</h1></a>
+    </div>
+    <a href="index2.html"><img id="aqua-logo" class="aqua-logo" src="./src/AQUA+ (1).svg" alt=""></a>
+ </header>
+    <main>
+        <div class="container">
+            <div class="section" id="reservatorio-1">
+                <h2>Reservatório 1</h2>
+                <p>Nível de Água:</p>
+                <div class="progress-container">
+                    <div class="progress-bar" id="nivel-agua-1"></div>
+                    <span class="progress-text" id="nivel-agua-text-1">0%</span>
+                </div>
+                <p>Status PH:</p>
+                <span id="status-ph-1">Aguardando...</span>
+                <p>Status Turbidez:</p>
+                <span id="status-turbidez-1">Aguardando...</span>
+                <button id="atuadores-1" class="hidden glow">Ativar Atuadores</button>
+                <div id="limpeza-indicador-1" class="hidden">
+                    <p>Processando Limpeza...</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="limpeza-bar-1"></div>
+                        <span class="progress-text" id="limpeza-text-1">0%</span>
+                    </div>
+                </div>
+                <button id="liberar-agua-1" class="hidden glow">Liberar Água para Reservatório 2</button>
+            </div>
+
+            <div class="section" id="reservatorio-2">
+                <h2>Reservatório 2</h2>
+                <p>Nível de Água:</p>
+                <div class="progress-container">
+                    <div class="progress-bar" id="nivel-agua-2"></div>
+                    <span class="progress-text" id="nivel-agua-text-2">0%</span>
+                </div>
+                <p>Status PH:</p>
+                <span id="status-ph-2">Aguardando...</span>
+                <p>Status Turbidez:</p>
+                <span id="status-turbidez-2">Aguardando...</span>
+                <button id="atuadores-2" class="hidden glow">Ativar Atuadores</button>
+                <div id="limpeza-indicador-2" class="hidden">
+                    <p>Processando Limpeza...</p>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="limpeza-bar-2"></div>
+                        <span class="progress-text" id="limpeza-text-2">0%</span>
+                    </div>
+                </div>
+                <button id="liberar-agua-2" class="hidden glow">Liberar Água para Centros de Distribuição</button>
+            </div>
+        </div>
+        <div class="logs">
+            <h2>Logs do Sistema</h2>
+            <ul id="logs"></ul>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/aqua+.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

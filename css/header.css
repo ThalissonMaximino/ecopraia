@@ -1,0 +1,143 @@
+header {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.548);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; /* Garantia que o header fique fixo no topo */
+    z-index: 3;
+    backdrop-filter: blur(10px);
+    background-color: #00000042;
+}
+
+body {
+    margin: 0;
+    padding-top: 80px; /* Espaço reservado para o header fixo */
+}
+
+.fa-fish {
+    margin-left: 70px;
+    font-size: 40px;
+    display: flex;
+    color: #126ef8;
+}
+
+.fa-fish h1 {
+    font-size: 20px;
+    margin: 10px 0 0 5px;
+    color: #ffffff;
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+.list-item a {
+    color: #ffffff71;
+}
+
+.list-item.active a {
+    color: #ffffff;
+    border-bottom: #126ef8 2px solid;
+}
+
+.btn-ctt {
+    margin: 0 60px 0 0;
+    padding: 8px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.377);
+    background-color: #126ef8;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.btn-ctt a {
+    color: #ffffff;
+}
+
+.btn-ctt:hover a {
+    color: #126ef8;
+}
+
+.btn-ctt:hover {
+    background-color: #ffffff;
+}
+
+#mobile_btn {
+    display: none;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.aqua-logo {
+    width: 120px;
+    margin: 0 60px 0 0;
+}
+
+@media screen and (max-width: 1170px) {
+    .fa-x {
+        margin-right: -39vw;
+    }
+
+    .nav-list-mobile {
+        display: block;
+        padding: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 0 8px black;
+        position: fixed;
+        right: 0;
+        margin-top: 420px;
+        font-size: 12px;
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .list-item a {
+        color: #000000;
+    }
+
+    .nav-list-mobile li {
+        margin: 10px 0;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+        margin: 0 60px 0 0;
+        color: #126ef8;
+    }
+
+    #nav-mobile.active {
+        display: block;
+        text-align: center;
+        list-style: none;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+    .btn-ctt {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .nav-list-mobile {
+        margin-top: 220px;
+    } 
+
+    .fa-fish{
+        margin:0;
+    }
+    .fa-x {
+        margin-right: -10vw;
+    }
+}

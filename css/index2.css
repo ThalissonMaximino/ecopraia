@@ -1,0 +1,229 @@
+    
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    background-color: #ebe2d9;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.548);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0; 
+    z-index: 3;
+    backdrop-filter: blur(10px);
+    background-color: #00000042;
+    padding: 0 20px;
+}
+
+main {
+    margin-top: 80px; 
+    padding: 20px;
+}
+a{
+  text-decoration: none;
+            color: inherit;
+            outline: none;
+}
+.fa-fish { 
+    list-style: none;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    color: #126ef8;
+}
+
+.fa-fish h1 {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.aqua-logo {
+    width: 120px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.section {
+    flex: 1;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.progress-container {
+    margin: 20px 0;
+    height: 30px;
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #126ef8;
+    width: 0%;
+    transition: width 0.1s;
+}
+
+.progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #fff;
+}
+
+
+button {
+    background-color: #126ef8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+button.alert {
+    background-color: #ff0000;
+}
+
+button.glow {
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(18, 110, 248, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(18, 110, 248, 0.8);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+
+.logs {
+    margin-top: 20px;
+}
+
+.logs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logs li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team10-logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+footer i {
+    margin-top: 10px;
+    color: #126ef8;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .section {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+
+    header {
+        height: auto;
+        padding: 10px;
+        flex-direction: column; 
+    }
+
+    .fa-fish h1 {
+        font-size: 18px;
+    }
+
+    .aqua-logo {
+        width: 100px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .progress-container {
+        height: 20px;
+    }
+
+    .progress-text {
+        font-size: 12px; 
+    }
+
+    button {
+        padding: 8px 15px; 
+        font-size: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer i {
+        font-size: 18px;
+    }
+}
